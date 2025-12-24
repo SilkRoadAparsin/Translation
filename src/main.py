@@ -20,5 +20,6 @@ southern_kurdish_kalhori_df = pd.read_excel(southern_kurdish_kalhori_path)
 zoroastrian_yazdi_df = pd.read_excel(zoroastrian_yazdi_path)
 
 data = pd.read_csv(data_path)
-data['english_translation'] = data['english_translation'].str.replace('"', '', regex=False)
+data['zoroastrian_yazdi_translation'] = zoroastrian_yazdi_df['translation']
+data['zoroastrian_yazdi_transliteration'] = zoroastrian_yazdi_df['transliteration']
 data.to_csv(data_path, index=False)
