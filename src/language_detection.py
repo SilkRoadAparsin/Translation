@@ -5,8 +5,6 @@
 import pandas as pd
 import os
 
-os.environ["OPENROUTER_API_KEY"] = "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"
-
 csv_path = f'datasets/language_detection_data.csv'
 df = pd.read_csv(csv_path)
 
@@ -406,17 +404,6 @@ import re
 import pandas as pd
 import time
 from tqdm import tqdm
-
-MODELS_8 = [
-    "openai/gpt-4o",
-    "openai/gpt-4o-mini",
-    "qwen/qwen3-32b",
-    "qwen/qwen3-14b",
-    "google/gemma-3-27b-it",
-    "google/gemma-3-12b-it",
-    "meta-llama/llama-3.3-70b-instruct",
-    "meta-llama/llama-3.1-8b-instruct",
-]
 
 OUTDIR = Path("/home/sadegh/Translation/results")
 OUTDIR.mkdir(parents=True, exist_ok=True)
