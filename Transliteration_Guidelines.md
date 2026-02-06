@@ -1,5 +1,6 @@
   
-**APARSIN Transliteration Guidelines** 
+<h1 align="center">APARSIN Transliteration Guidelines</h1>
+
 
 **1. Consonants**
 
