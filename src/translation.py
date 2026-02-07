@@ -118,7 +118,10 @@ def translate_text(text: str, language: str, dialect: str, accent: str, target_l
         max_output_tokens=256,
 
     )
-    translation = response.output[0].content[0].text.strip()
+    try:
+        translation = response.output[0].content[0].text.strip()
+    except:
+        return translate_text(text, language, dialect, accent, target_language,  model)
     return translation
 
 
